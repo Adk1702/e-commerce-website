@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Best Seller</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+
+<body>
+
+<<div class="top-bar">
+  <div class="marquee">
+    <span>
+      🔥 SALE100 - Flat 10% OFF &nbsp;&nbsp;&nbsp;
+      🎉 SALE200 - Flat 20% OFF &nbsp;&nbsp;&nbsp;
+      💥 FREE DELIVERY on orders above ₹999
+    </span>
+  </div>
+</div>
+
+  <div class="nav-bar">
+    <div class="container nav-content">
+      <div class="logo"><i class="fa-solid fa-bag-shopping"></i> MyShop</div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bestseller.html">Best Seller</a>
+        <a href="newarrival.html">New Arrival</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <span id="cart-count">🛒 0</span>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <h2 class="section-title">Best Seller</h2>
+
+  
+  <h3 class="section-subtitle">Co-ord Sets</h3>
+
+  <div class="image-grid">
+
+    <div class="img-card">
+      <img src="dress1.webp">
+      <h4 class="product-name">Co-ord Set 1</h4>
+
+      <div class="price-box">
+        <span class="new-price">₹999</span>
+        <span class="old-price">₹1999</span>
+        <span class="discount">50% off</span>
+      </div>
+
+      <div class="rating">⭐⭐⭐⭐☆ (120)</div>
+
+      <button class="cart-btn" onclick="addToCart('Co-ord Set 1')">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="img-card">
+      <img src="dress2.webp">
+      <h4 class="product-name">Co-ord Set 2</h4>
+
+      <div class="price-box">
+        <span class="new-price">₹1499</span>
+        <span class="old-price">₹2499</span>
+        <span class="discount">40% off</span>
+      </div>
+
+      <div class="rating">⭐⭐⭐⭐⭐ (200)</div>
+
+      <button class="cart-btn" onclick="addToCart('Co-ord Set 2')">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="img-card">
+      <img src="dress3.jpg">
+      <h4 class="product-name">Co-ord Set 2</h4>
+
+      <div class="price-box">
+        <span class="new-price">₹1499</span>
+        <span class="old-price">₹2499</span>
+        <span class="discount">40% off</span>
+      </div>
+
+      <div class="rating">⭐⭐⭐⭐⭐ (200)</div>
+
+      <button class="cart-btn" onclick="addToCart('Co-ord Set 3')">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+
+ 
+  <h3 class="section-subtitle">One-Piece</h3>
+
+  <div class="image-grid">
+
+    <div class="img-card">
+      <img src="Ai.jpg">
+      <h4 class="product-name">Floral Dress</h4>
+
+      <div class="price-box">
+        <span class="new-price">₹799</span>
+        <span class="old-price">₹1299</span>
+        <span class="discount">38% off</span>
+      </div>
+
+      <div class="rating">⭐⭐⭐⭐☆ (90)</div>
+
+      <button class="cart-btn" onclick="addToCart('Floral Dress')">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="img-card">
+      <img src="dress.jpg">
+      <h4 class="product-name">Casual One Piece</h4>
+
+      <div class="price-box">
+        <span class="new-price">₹799</span>
+        <span class="old-price">₹1399</span>
+        <span class="discount">43% off</span>
+      </div>
+
+      <div class="rating">⭐⭐⭐⭐☆ (75)</div>
+
+      <button class="cart-btn" onclick="addToCart('Casual One Piece')">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="img-card">
+      <img src="Ai.jpg">
+      <h4 class="product-name">Co-ord Set 2</h4>
+
+      <div class="price-box">
+        <span class="new-price">₹1499</span>
+        <span class="old-price">₹2499</span>
+        <span class="discount">40% off</span>
+      </div>
+
+      <div class="rating">⭐⭐⭐⭐⭐ (200)</div>
+
+      <button class="cart-btn" onclick="addToCart('Co-ord Set 2')">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <script src="script.js"></script>
+  <div class="footer-top">
+    <div class="container footer-content">
+
+      <div class="footer-col">
+        <h3>Social</h3>
+        <p><i class="fa fa-facebook"></i> Facebook</p>
+        <p><i class="fa fa-instagram"></i> Instagram</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <p>Home</p>
+        <p>Products</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p><i class="fa fa-phone"></i> 9876543210</p>
+        <p><i class="fa fa-envelope"></i> email@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 MyShop
+  </div>
+</footer>
+
+<!-- JS -->
+<script>
+let cartCount = 0;
+
+function addToCart(productName) {
+  cartCount++;
+  document.getElementById("cart-count").innerText = "🛒 " + cartCount;
+  alert(productName + " added to cart!");
+}
+</script>
+
+</body>
+</html>
